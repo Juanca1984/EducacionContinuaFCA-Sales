@@ -33,7 +33,7 @@ En línea con Crystal Clear, hemos asignado los siguientes roles (una persona pu
 
 ### 2.2 Ritmo de las Reuniones
 
-Nuestro "Latido" se basa en Sprints de **1 semana**.
+Nuestro "Latido" se basa en Sprints de **2 semanas**.
 
 | Evento | Frecuencia | Duración Máxima | Propósito |
 | :--- | :--- | :--- | :--- |
