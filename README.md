@@ -177,6 +177,31 @@ El `Daily Update` se enviará en el grupo de WhatsApp a primera hora (ej: 9:00 A
 
 ### 6.2 Comunicación General
 
-* **Consultas Técnicas Urgentes:** Usar el canal de **WhatsApp** o llamada directa.
-* **Decisiones Arquitectónicas o de Proceso:** Se documentan en el **Issue** o en el *Wiki* del repositorio para que la información perdure.
-* **Evitar *Chatting* Generalizado:** El canal de WhatsApp es primariamente para el **trabajo y bloqueos** para respetar el **Foco** del equipo.
+# Métodos para la Estimación del Esfuerzo en Proyectos de Software
+
+El siguiente documento resume métodos para la estimación del esfuerzo en proyectos de software, principalmente basados en **Puntos de Casos de Uso (UCP)** y la relación con la **complejidad y las transacciones**, así como un método basado en la **cantidad de objetos y su complejidad**.
+
+---
+
+## 1. Puntos de Casos de Uso (UCP)
+
+El método de **Puntos de Casos de Uso (UCP)** clasifica los casos de uso en tres niveles de complejidad, basándose en el número de transacciones que contienen:
+
+| Clasificación | Número de Transacciones | Factor de Peso |
+|----------------|--------------------------|----------------|
+| Simple         | 1 a 3                    | 5              |
+| Promedio       | 4 a 7                    | 10             |
+| Complejo       | 8 o más                  | 15             |
+
+Una **transacción** se define como un evento que ocurre entre un actor y el sistema a ser modelado.
+
+Una vez especificados los casos de uso, se obtiene un mejor nivel de detalle para estimar de manera más exacta los puntos de función.
+
+---
+
+## 2. Estimación del Esfuerzo a partir de los Casos de Uso
+
+El esfuerzo estimado se mide en **horas-hombre** y se calcula con la siguiente fórmula:
+
+E = UCP \times CF
+
